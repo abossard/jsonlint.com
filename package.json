@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run lint",
     "build": "npm run clean && NODE_ENV=production webpack",
-    "develop": "NODE_ENV=development webpack-dev-server --port 8106",
+    "develop": "webpack-dev-server --port 8106",
     "clean": "rimraf dist",
     "upgrade": "ncu --upgradeAll && npm install",
     "lint": "eslint . --ext .js --ignore-pattern '**/node_modules/**' --ignore-pattern '**/dist/**'",
